@@ -1,5 +1,5 @@
 # 人数集計システムポップアップVer.3
-- AIM Commonsでの30分提示集計を知らせるポップアップです。
+- AIM Commonsでの30分定時集計を知らせるポップアップです。
 - TkEasyGUIを使ってUIを構築します。
 - PyInstallerを使ってexeにすることで、Pythonの実行環境がないWindowsでも動作します。
 
@@ -7,11 +7,16 @@
 - pythonの```3.13.2```を使っています（他のバージョンでも動くと思いますが未確認）
 - モジュールのバージョンは```requirements.txt```をみてください。
 
-## インストール
-次のコマンドを実行します  
-```
-pip install -r requirements.txt
-```
+## exe化する方法
+1. 次のコマンドを実行します  
+    ```
+    pip install -r requirements.txt
+    ```
+2. main.pyを変更します。
+3. どちらかのコマンドを実行します。
+   1. ```pyinstaller main.py -F -w --clean```
+   2. ```pyinstaller main.spec```
+4. distフォルダにexeが生成されます。画像を忘れずにdistフォルダにコピーしてください。
 
 ## 注意
 - PyInstallerは、実行する環境によって、出力するものが異なります
