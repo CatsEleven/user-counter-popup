@@ -14,8 +14,12 @@
     ```
 2. main.pyを変更します。
 3. どちらかのコマンドを実行します。
-   1. ```pyinstaller main.py -F -w --clean```
-   2. ```pyinstaller main.spec```
+   1. ```
+      pyinstaller main.py -F -w --clean
+      ```
+   2. ```
+      pyinstaller main.spec
+      ```
 4. distフォルダにexeが生成されます。画像を忘れずにdistフォルダにコピーしてください。
 
 ## 注意
