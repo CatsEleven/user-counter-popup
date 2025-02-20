@@ -1,4 +1,5 @@
 """人数集計システムポップアップVer.3"""
+
 import TkEasyGUI as eg
 import pyautogui as pag
 
